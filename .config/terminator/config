@@ -1,0 +1,93 @@
+[global_config]
+  always_split_with_profile = True
+  focus = mouse
+  inactive_color_offset = 0.82
+  title_hide_sizetext = True
+  title_receive_bg_color = "#73d216"
+  title_transmit_bg_color = "#8ae234"
+[keybindings]
+  close_term = <Primary>w
+  close_window = <Primary><Shift>w
+  cycle_next = None
+  new_tab = <Primary>t
+  search = <Primary>f
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1985:24
+      size = 1855, 1056
+      title = /bin/bash
+      type = Window
+    [[[child1]]]
+      active_page = 0
+      labels = None, None, None
+      last_active_term = 5cab2c79-e798-4b06-882b-c6830395eeb5, 07e36c34-e200-4f8b-83c2-e5fb302f0954, 29918a08-31f7-4bb6-867d-7c24d5e2ebde
+      order = 0
+      parent = child0
+      type = Notebook
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 927
+      ratio = 0.500269832704
+      type = HPaned
+    [[[child3]]]
+      order = 0
+      parent = child2
+      position = 509
+      ratio = 0.5
+      type = VPaned
+    [[[child6]]]
+      order = 1
+      parent = child2
+      position = 509
+      ratio = 0.5
+      type = VPaned
+    [[[terminal10]]]
+      order = 2
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 29918a08-31f7-4bb6-867d-7c24d5e2ebde
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 9aaee0e8-41b2-427d-87b4-b40ece9f15a4
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 5cab2c79-e798-4b06-882b-c6830395eeb5
+    [[[terminal7]]]
+      order = 0
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = 13eb083b-674f-42ee-9ec7-67bffa6711a2
+    [[[terminal8]]]
+      order = 1
+      parent = child6
+      profile = default
+      type = Terminal
+      uuid = c7232028-9e01-4278-b60f-be7e5280ba67
+    [[[terminal9]]]
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 07e36c34-e200-4f8b-83c2-e5fb302f0954
+[plugins]
+[profiles]
+  [[default]]
+    cursor_color = "#aaaaaa"
+    icon_bell = False
+    scrollback_lines = 5000
+    show_titlebar = False
