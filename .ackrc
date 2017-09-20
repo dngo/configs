@@ -1,0 +1,25 @@
+--ignore-ack-defaults
+# This is the default ackrc for ack version 2.14.
+
+# There are four different ways to match
+#
+# is:  Match the filename exactly
+#
+# ext: Match the extension of the filename exactly
+#
+# match: Match the filename against a Perl regular expression
+#
+# firstlinematch: Match the first 250 characters of the first line
+#   of text against a Perl regular expression.  This is only for
+#   the --type-add option.
+
+##files to ignore
+--ignore-file=is:tags
+--ignore-file=is:.byebug_history
+--ignore-file=ext:log
+--ignore-file=ext:cache
+
+
+### Directories to ignore
+--ignore-directory=is:log
+
