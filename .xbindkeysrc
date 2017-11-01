@@ -1,0 +1,12 @@
+#https://superuser.com/questions/97149/fast-window-switching-without-alt-tab-or-command-tab
+#xbindkeys -k #find corresponding key
+#xbindkeys -p #reload
+
+"wmctrl -xa terminator"
+  m:0x10 + c:195
+  Mod2 + XF86Launch8
+
+"wmctrl -xa Chrome"
+  m:0x10 + c:196
+  Mod2 + XF86Launch9
+
