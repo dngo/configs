@@ -2,6 +2,8 @@
 #export PATH=/usr/local/bin:/usr/local/mysql/bin:/Users/davidngo/workspace/lua-5.3.0/src:/usr/local/openresty/nginx/sbin:$PATH
 #export PATH=/usr/local/bin:/usr/local/mysql/bin:/usr/local/openresty/nginx/sbin:$PATH
 export BUNDLER_EDITOR=vi
+source ~/git-completion.bash
+
 #export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 
@@ -18,7 +20,5 @@ alias logins='cat ~/logins.txt'
 alias s="rspec"
 
 eval $(ssh-agent) ; ssh-add
-
-
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
