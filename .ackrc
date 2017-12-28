@@ -24,4 +24,4 @@
 --ignore-directory=is:log
 --ignore-directory=is:tmp
 --ignore-directory=is:coverage
-
+--ignore-directory=is:.git
