@@ -12,12 +12,13 @@ alias mysql_start='sudo /usr/local/mysql/support-files/mysql.server start'
 alias elasticsearch='/Users/davidngo/Downloads/elasticsearch-2.2.1/bin/elasticsearch'
 alias ws='cd ~/workspace'
 alias rep='cd ~/workspace/replogic'
+alias hip='cd ~/workspace/hiply'
 alias chess='cd ~/workspace/chessit'
 
-alias database_setup='rake db:migrate' #&& rake db:migrate RAILS_ENV=test'
+alias database_setup='rake db:migrate' && 'rake db:test:prepare'
 alias notes='cat ~/notes.txt'
 alias logins='cat ~/logins.txt'
-alias s="rspec"
+alias aws='cat ~/aws.txt'
 
 eval $(ssh-agent) ; ssh-add
 
