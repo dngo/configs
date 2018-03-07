@@ -1,3 +1,6 @@
+#apt-get install wmctrl
+#apt-get install xbindkeys
+#add xbindkeys to gnome session preferences to startup on boot
 #https://superuser.com/questions/97149/fast-window-switching-without-alt-tab-or-command-tab
 #xbindkeys -k #find corresponding key
 #xbindkeys -p #reload
