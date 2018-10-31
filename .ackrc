@@ -19,9 +19,18 @@
 --ignore-file=ext:log
 --ignore-file=ext:cache
 
+#show 3 surrounding lines
+-C3
+#ignore case
+-i
+
 
 ### Directories to ignore
 --ignore-directory=is:log
 --ignore-directory=is:tmp
 --ignore-directory=is:coverage
+--ignore-directory=is:vendor
 --ignore-directory=is:.git
+--ignore-directory=is:node_modules
+--ignore-directory=is:packs-test
+--ignore-directory=is:public/packs
