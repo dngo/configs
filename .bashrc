@@ -1,25 +1,21 @@
-#export PATH=/usr/local/bin:/usr/local/mysql/bin:$PATH
-#export PATH=/usr/local/bin:/usr/local/mysql/bin:/Users/davidngo/workspace/lua-5.3.0/src:/usr/local/openresty/nginx/sbin:$PATH
-#export PATH=/usr/local/bin:/usr/local/mysql/bin:/usr/local/openresty/nginx/sbin:$PATH
 export BUNDLER_EDITOR=vi
-source ~/git-completion.bash
-
-#export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-
+source "/home/david/.git-completion.bash"
 
 alias mysql_start='sudo /usr/local/mysql/support-files/mysql.server start'
 alias elasticsearch='/Users/davidngo/Downloads/elasticsearch-2.2.1/bin/elasticsearch'
 alias ws='cd ~/workspace'
-alias rep='cd ~/workspace/replogic'
-alias hip='cd ~/workspace/hiply'
-alias chess='cd ~/workspace/chessit'
+alias chess='cd ~/workspace/chesshub; ctags -R .'
 
-alias database_setup='rake db:migrate' && 'rake db:test:prepare'
+alias database_setup='rake db:migrate' #&& rake db:migrate RAILS_ENV=test'
+alias server_restart='chess; pkill -9 -fe stockfish; pkill -9 -fe puma; pkill -9 -fe rails; rails s webrick'
+alias webpack_restart='chess; pkill -9 -fe webpack; bin/webpack-dev-server'
 alias notes='cat ~/notes.txt'
 alias logins='cat ~/logins.txt'
 alias aws='cat ~/aws.txt'
 
 eval $(ssh-agent) ; ssh-add
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export JAVA_HOME=/usr/
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
