@@ -5,4 +5,4 @@
 	editor = vim
 	excludesfile = /home/david/.gitignore_global
 [help]
-	autocorrect = 5
+	autocorrect = immediate
